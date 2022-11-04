@@ -3,10 +3,9 @@ install:
         pip install -r requirements.txt
 
 test:
-    python -m pytest -vv test_hello.py
-
+    python -m pytest -vv test_hello.pytest
 
 lint:
-    pylint --disable=R,C hello.py
+    pylint --disable=R,C hello.pylint
 
 all: install lint test
